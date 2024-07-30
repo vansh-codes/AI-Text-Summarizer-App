@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Text Summarizer App</title>
+    <link rel="stylesheet" href="stylesheet.css">   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link
+            rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>AI Text Summarizer</h1>
+      <p>Welcome to the AI Text Summarizer! This app leverages the power of Artificial Intelligence APIs to provide concise summaries of long texts. Whether you have a lengthy article, research paper, or any other text document that you want to summarize quickly, our app can assist you.</p>
+      <p>Simply paste your text into the text area below and click the "Summarize" button.</p>
+    </header>
+    <main class="container">
+      <div class="text-box">
+        <textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" maxlength="100000" aria-label="Text to summarize"></textarea>
+        <div class="character-count" id="char-count">0/100,000 characters</div>
+        <button id="submit-button" class="submit-button">
+          <span class="submit-button-text">Summarize</span>
+        </button>
+      </div>
+      <div class="text-box">
+        <textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here" aria-label="Summarized text" readonly style="cursor: default;"></textarea>
+      </div>
+    </main>
+
+    <!-- =========== SOCIAL LINKS ============ -->
+    <div id="right-socials">
+      <a href="https://github.com/vansh-codes/" style="color: #000"
+      ><i class="fa-brands fa-github fa-3x" id="github-link"></i
+          ></a>
+          <a
+          href="https://linkedin.com/in/vanshchaurasiya24/"
+          style="color: #0a66c2"
+          ><i
+          class="fa-brands fa-linkedin fa-3x"
+          id="linkedin-link"
+          ></i
+          ></a>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 AI Text Summarizer. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
