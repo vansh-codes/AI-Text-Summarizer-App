@@ -13,7 +13,7 @@ app.use(express.static('public'));
 
 app.get('/', function(req, res){
   console.log("RUNNING\n");
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile('/index.html');
 });
 
 app.post('/summarize', (req, res) => {
