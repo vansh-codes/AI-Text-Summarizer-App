@@ -27,6 +27,7 @@ function verifyTextLength(e) {
 }
 
 function submitData(e) {
+  console.log("Submitted\n");
 
  // This is used to add animation to the submit button
   submitButton.classList.add("submit-button--loading");

@@ -16,6 +16,7 @@ app.get('/', function(req, res){
 });
 
 app.post('/summarize', (req, res) => {
+  console.log("sent request..\n");
   // get the text_to_summarize property from the request body
   const text = req.body.text_to_summarize;
 
