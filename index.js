@@ -16,7 +16,7 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/public/index.html');
 });
 
-app.post('/summarize', (req, res) => {
+app.post('/api/summarize', (req, res) => {
   console.log("sent request..\n");
   // get the text_to_summarize property from the request body
   const text = req.body.text_to_summarize;
