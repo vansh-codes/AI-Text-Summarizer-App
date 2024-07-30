@@ -13,6 +13,7 @@ async function summarizeText(text) {
       "min_length": 30
     }
   });
+  console.log("ENV ", process.env.ACCESS_TOKEN);
   let config = {
     method: 'post',
     maxBodyLength: Infinity,
