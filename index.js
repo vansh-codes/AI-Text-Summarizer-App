@@ -12,7 +12,8 @@ app.use(express.static('public'));
 // Handle POST requests to the '/summarize' endpoint
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/public/index.html');
+  console.log("RUNNING\n");
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.post('/summarize', (req, res) => {
