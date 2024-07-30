@@ -5,15 +5,5 @@
             "source": "/(.*)", 
             "destination": "/" 
         }
-    ],
-    "routes":[
-        {
-            "src": "/",
-            "dest": "public/index.html"
-        },
-        {
-            "src": "/summarize",
-            "dest": "/summarize.js"
-        }
     ]
 }
