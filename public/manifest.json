@@ -1,0 +1,66 @@
+{
+    "name": "AI Text Summarizer",
+    "short_name": "Text Summarizer",
+    "lang": "en-US",
+    "id": "/",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "white",
+    "orientation": "any",
+    "theme_color": "#2b2b2b",
+    "description": "AI Text Summarizer App - Quickly generate concise summaries of lengthy articles, research papers, and other documents using advanced AI technology",
+    "icons": [
+        {
+            "src": "/icons/icon16.webp", 
+            "sizes": "16x16",
+            "type": "image/webp"
+        },
+        {
+            "src": "/icons/icon32.webp", 
+            "sizes": "32x32",
+            "type": "image/webp"
+        },
+        {
+            "src": "/icons/icon48.webp", 
+            "sizes": "48x48",
+            "type": "image/webp"
+        },
+        {
+            "src": "/icons/icon128.webp", 
+            "sizes": "128x128",
+            "type": "image/webp"
+        },
+        {
+            "src": "/icons/android-chrome-192x192.png", 
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/icons//screenshot1.png",
+            "sizes": "1919x910",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/icons/screenshot2.png",
+            "sizes": "1911x910",
+            "type": "image/png"
+        }
+    ],
+    "protocol_handlers": [
+        {
+        "protocol": "web+app",
+        "url": "/?url=%s"
+        }
+    ],
+    "categories": ["education", "productivity", "ai", "artificial intelligence", "Summarizer"],
+    "dir": "ltr",
+    "display_override": ["window-controls-overlay", "standalone"]
+}
