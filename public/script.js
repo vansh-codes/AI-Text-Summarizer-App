@@ -2,6 +2,7 @@ const textArea = document.getElementById("text_to_summarize");
 const charCount = document.getElementById('char-count');
 const submitButton = document.getElementById("submit-button");
 const summarizedTextArea = document.getElementById("summary");
+const copyBtn = document.getElementById("copyButton");
 
 submitButton.disabled = true;
 
@@ -25,6 +26,11 @@ function verifyTextLength(e) {
     submitButton.disabled = true;
   }
 }
+
+copyBtn.addEventListener("click", function () {
+  copyToClipboard(summarizedTextArea.value);
+  console.log("TEXT: ",summarizedTextArea.value);
+});
 
 function submitData(e) {
   console.log("Submitted\n");
@@ -61,8 +67,19 @@ function submitData(e) {
 
       // Stop the spinning loading animation
       submitButton.classList.remove("submit-button--loading");
+      copyBtn.style.display = "inline-block";
     })
     .catch(error => {
       console.log(error.message);
     });
+}
+
+function copyToClipboard(text) {
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  document.body.removeChild(textarea);
+  alert("Copied to clipboard");
 }
